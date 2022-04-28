@@ -2,7 +2,11 @@
 
 
 it('TC_1_rentCar searchPage', function () {
-    cy.visit('http://qalab.pl.tivixlabs.com')
+
+    //Using baseUrl of website from cypress.json file
+    let url = Cypress.config().baseUrl
+    cy.visit(url)
+
     cy.get('#country').select('Germainy').should('have.value', '2')
     cy.get('#city').select('Berlin').should('have.value', '3')
     cy.get('#model').type('Mazda')

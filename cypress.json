@@ -1,4 +1,5 @@
 {
     "baseUrl": "http://qalab.pl.tivixlabs.com",
-    "watchForFileChanges": true
+    "watchForFileChanges": true,
+    "testFiles": "**/*.feature"
 }
